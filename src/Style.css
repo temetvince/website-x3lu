@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yaldevi:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /*Variables*/
 :root {
-   --font-primary: "Roboto";
+   --font-primary: "Oswald";
    --font-fallback: sans-serif;
 
    --text-xl: 2rem;
    --text-lg: 1.8rem;
    --text-md: 1.5rem;
 
-   --text-color: #8c2b15;
+   --text-color: lime;
 
    --global-light: #cbcdd2;
    --global-dark: #1c1d21;
@@ -71,6 +70,10 @@
 
 .wide {
    min-width: 100%;
+}
+
+.full-height {
+   height: 100vh;
 }
 
 .fit-content {
@@ -389,6 +392,10 @@
    display: flex;
 }
 
+.flex-grow {
+   flex: 1;
+}
+
 .flex-column-reverse {
    flex-direction: column-reverse;
 }
@@ -405,12 +412,20 @@
    flex-direction: column;
 }
 
+.flex-gap {
+   gap: var(--spacing);
+}
+
 .flex-same-size {
    flex: 1 1 0;
 }
 
 .flex-stretch {
    align-self: stretch;
+}
+
+.flex-center {
+   justify-content: center;
 }
 
 .flex-justify {
@@ -494,12 +509,13 @@ li {
 h1,
 h2,
 h3,
-h4 {
+h4,
+text {
    color: var(--text-color);
 }
 
 a {
-   color: var(--secondary-color);
+   color: var(--text-color);
    text-decoration: none;
 }
 

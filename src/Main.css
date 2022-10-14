@@ -1,0 +1,30 @@
+@import "/src/Style.css";
+
+.main {
+   background-color: #111111;
+   height: 100vh;
+}
+
+.title {
+   padding-top: 45px;
+}
+.image {
+   height: 100vh;
+
+   background-image: url("../public/hq.jpg");
+   background-repeat: no-repeat;
+   background-attachment: local;
+   background-size: cover;
+   background-position: center;
+}
+
+.button {
+   border: solid 3px var(--text-color);
+   border-radius: 3px;
+   padding: 5px;
+}
+
+.button:hover {
+   background-color: darkslategray;
+   cursor: pointer;
+}
