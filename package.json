@@ -1,0 +1,52 @@
+{
+  "name": "template-typescript-react",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.1.2",
+    "@types/node": "^18.8.5",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.31.10",
+    "npm-check-updates": "^16.3.11",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.8.4",
+    "web-vitals": "^3.0.3"
+  },
+  "scripts": {
+    "start": "npm run typescript && react-scripts start",
+    "build": "npm run typescript && react-scripts build",
+    "test": "npm run typescript && react-scripts test",
+    "eject": "react-scripts eject",
+    "typescript": "npm run lint && npm run format && tsc",
+    "lint": "eslint \"src/**/*.{cjs,js,jsx,ts,tsx}\" --quiet --fix",
+    "format": "prettier --write \"src/**/*.{cjs,js,jsx,ts,tsx,json}\" \"src/**/*.{cjs,js,jsx,ts,tsx,json,html,css}\"",
+    "update-dependencies": "ncu -u"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
