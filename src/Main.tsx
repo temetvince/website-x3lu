@@ -12,6 +12,12 @@ function Main() {
 
                <div className="flex flex-center flex-gap">
                   <a
+                     href="https://1drv.ms/u/s!At6bb8th7HZtmIxkhshjSYpamDbHSw?e=PCDfGG"
+                     className="button text-center"
+                  >
+                     Download
+                  </a>
+                  <a
                      href="https://discord.gg/S587CRb"
                      className="button text-center"
                   >
